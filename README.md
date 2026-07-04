@@ -17,7 +17,7 @@ This creates a Bag-of-Words representation by selecting the 15,000 most frequent
 A Scikit-learn Pipeline was created to automate the workflow:
 - Text preprocessing
 - Feature extraction using TfidfVectorizer
-- LinearSVC
+- LinearSVC  
 Using a pipeline makes preprocessing and prediction consistent for both training and unseen data.
 
 ## 👤 Author
