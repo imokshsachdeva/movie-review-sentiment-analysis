@@ -7,17 +7,17 @@ The following preprocessing steps were applied to the movie reviews:
 - Converted text to lowercase
 - Removed special characters and punctuation
 - Removed English stop words
-- Applied stemming using NLTK
+- Applied lemmatize using NLTK
 
 ## Feature Extraction
-The cleaned text was transformed into numerical vectors using CountVectorizer with Maximum Features: 9000  
-This creates a Bag-of-Words representation by selecting the 9,000 most frequent terms from the training corpus.
+The cleaned text was transformed into numerical vectors using TfidfVectorizer.  
+This creates a Bag-of-Words representation by selecting the 15,000 most frequent terms from the training corpus.
 
 ## Machine Learning Pipeline
 A Scikit-learn Pipeline was created to automate the workflow:
 - Text preprocessing
-- Feature extraction using CountVectorizer (max_features=9000)
-- Multinomial Naive Bayes classification
+- Feature extraction using TfidfVectorizer
+- LinearSVC
 Using a pipeline makes preprocessing and prediction consistent for both training and unseen data.
 
 ## 👤 Author
